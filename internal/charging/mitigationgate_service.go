@@ -10,5 +10,5 @@ type MitigationGateState struct {
 }
 
 func (s MitigationGateState) CanCertify() bool {
-	return s.Mitigated && s.ProtocolOK && s.CableOK && s.PowerOK
+	return s.Mitigated && s.ProtocolOK && s.CableOK && s.ThermalOK && s.PowerOK
 }
